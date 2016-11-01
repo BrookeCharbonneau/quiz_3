@@ -1,0 +1,54 @@
+---
+title:  "6060 Quiz 3: RMarkdown"
+author: "Brooke Charbonneau"
+output:
+  pdf_document:
+    number_sections: yes
+    toc_depth: 3
+---
+
+```{r,echo=FALSE,message=FALSE, warning=FALSE}
+# Code goes in blocks like this
+
+# load libraries
+library(tidyverse)
+library(apaTables)
+library(cocor)
+library(predictionInterval)
+
+```
+
+
+# Comparing the correlation between A1,C1 to E1,O1
+The correlation of the difference between A1 and C1 and E1 and O1 was $\Delta r$ = -.0099, 95% CI [-.11, .09], *p* = .85, *N* = 777. The confidence interval is consistent with anywhere from a weak negative to a weak positive relationship.
+
+
+# Comparing the correlation between A1,C1 to A1,E1
+The correlation of the difference between A1 and C1 and A1 and E1 was $\Delta r$ = -.08, 95% CI [-.18, .02], *p* = .13, *N* = 777. The confidence interval is consistent with anywhere from a medium negative to a very weak positive relationship.
+
+
+# Comparing the A1,E1 correlations for men and women
+The correlation of the difference for men (*N* = 252) and women (*N* = 525) on A1 and E1 was $\Delta r$ = .02, 95% CI [-.13, .17], *p* = .82. The confidence interval is consistent with anywhere from a medium negative to a medium positive relationship.
+
+
+# Comparing rating-raises to rating-critical correlations
+
+The correlation of the difference between ratings and raises and ratings and critical was $\Delta r$ = .43, 95% CI [.07, .79], *p* = .02, *N* = 30. However, the confidence interval is quite wide, and is consistent with anywhere from a weak positive to a very strong positive relationship.
+
+
+# Comparing rating-raises to complaints-critical correlations
+
+The correlation of the difference between ratings and raises and complaints and critical was $\Delta r$ = .40, 95% CI [.01, .78], *p* = .05, *N* = 30. However, the confidence interval is quite wide, and is only sufficient to suggest that the relationship is likely not negative.
+
+
+#Comparing two correlations of rating-raises
+
+
+The correlation of the difference between orginal (*N* = 30) and replication (*N* = 3000) studies on the correlation of ratings and raises was $\Delta r$ = .56, 95% CI [.03, .76], *p* = .0008 . Statistically, this means that  we cannot rule out that the two correlations came from the same population. 
+
+
+#Strength of rating-raises correlation
+
+
+The correlation between ratings and raisess obtained in Table 1 was *r* = .59, 95% CI [.29, .78]; however, this correlation came from a sample of 30. We could not rule out that a correlation of .03 from a sample of 3000 came from a different population. Because a sample size of 3000 is considerably larger than a sample size of 30, we should assume that the second correlation is much more informative than the first study. As such, we can infer that there is likely a very weak positive correlation between ratings and raises.
+
